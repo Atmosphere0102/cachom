@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* reset option */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* header styling */
+.header{
+    width: 100%;
+    background-color: rgb(53, 13, 212);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    width: 80px;
+    height: 70px;
+    padding: 15px;
+}
+.navbar ul{
+    display: flex;
+    gap: 25px;
+    padding-right: 20px;
+}
+.toggle{
+   display: none;
+   color: rgb(255, 255, 255);
+   padding: 25px;
+   cursor: pointer;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* End header */
+
+/* Hero styling */
+.hero{
+    background-image: linear-gradient(to top, rgb(166, 2, 235), rgb(53, 13, 212));
+    background-size: cover;
+    width: 100%;
+}
+.hero .container{
+    display: flex;
+    justify-content: center;
+    padding: 75px 25%;
+}
+.hero .content h1{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-align: center;
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero .content p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    line-height: 20px;
+}
+.hero .content a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic';
+}
+.hero .content .btn{
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.1s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.hero .content .btn:hover{
+    transform: scale(1.05);
+}
+.hero .content .btn button{
+    background-color: rgb(53, 13, 212);
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Slider/about styling */
+.slider{
+    padding: 20px;
+    width: 100%;
+}
+.slider .slide-title h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.slider .container{
+    position: relative;
+}
+.mySlides{
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+.verse{
+    color: rgb(220, 20, 60);
+    padding-top: 0.9px;
+    font-weight: 300;
+}
+.mySlides p{
+    font-weight: 700;
+}
+.mySlides q{
+    padding-top: 0.9px;
+}
+
+/* Navigations arrow */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    color: rgb(220, 20, 60);
+}
+
+/* the dots  */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(53, 13, 212);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: rgb(166, 2, 235);
+}
+q {
+    font-style: italic;
+}
+
+/* Main styling */
+.main{
+    padding: 20px;
+    width: 100%;
+}
+.main .title,
+.event .title,
+.about .title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.main .main-content .card{
+    width: calc(33% - 20px);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 9px;
+    padding: 100px 0px;
+    cursor: pointer;
+    
+}
+.main .main-content .card .box{
+    transition: all 0.1s ease;
+}
+.main .main-content .card:hover .box{
+    transform: scale(1.05);
+}
+.main .main-content .card i{
+   font-size: 30px;
+   color:rgb(2, 26, 224);
+}
+.main .main-content .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: rgb(0, 0, 0);
+}
+.main .main-content .card p{
+    color: rgb(0, 0, 0);
+}
+.main .main-content{
+    display: flex;  
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Even styling */
+.event{
+    width:100%;
+    padding: 20px;
+}
+.event .container-1,
+.event .container-2,
+.event .container-3,
+.event .container-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-size: cover;
+}
+.event-1,
+.event-2,
+.event-3,
+.event-4{
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+}
+.container-1 img,
+.container-2 img,
+.container-3 img,
+.container-4 img{
+   width: 800px;
+   height: 450px;
+   border-radius: 20px;
+}
+.event-1 h5,
+.event-2 h5,
+.event-3 h5,
+.event-4 h5{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.view{
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color:  rgb(53, 13, 212);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.view:hover{
+    background-color: rgb(166, 2, 235);
+    transition: all 0.3s ease;
+}
+.container-2,
+.container-3,
+.container-4{
+    padding-top: 15px;
+}
+
+
+
+/* About styling */
+.about{
+    width: 100%;
+}
+.abt-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.card-1,
+.card-2,
+.card-3{
+    text-align: center;
+    background: none;
+    padding: 90px;
+    box-shadow: 12px 17px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+.card-1:hover,
+.card-2:hover,
+.card-3:hover{
+    transform: translateY(-20px);
+}
+.card-1 b,
+.card-2 b,
+.card-3 b{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.card-1 p,
+.card-2 p,
+.card-3 p{
+    word-spacing: 1px;
+}
+.about-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.c-1,
+.c-2{
+    padding: 50px;
+    text-align: center;
+    border: 1px  rgb(211, 211, 211);
+    line-height: 25px;
+    border-radius: 9px;
+    background-image: linear-gradient(to bottom, rgb(166, 2, 235), rgb(53, 13, 212));
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 7px 7px 3px rgba(0, 0, 0, 0.315),
+    0 6px 15px 0 rgba(0, 0, 0, 0.14);
+}
+
+.c-1 p,
+.c-2 p{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.c-1 img,
+.c-2 img{
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 3px 2px 3px rgba(1, 1, 1, 0.644);
+}
+.c-1 .content,
+.c-2 .content{
+    font-weight: 200;
+    text-transform: lowercase;
+}
+.c-1 .content span,
+.c-2 .content span{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+/* Contact Styling */
+.contact{
+    width: 100%;
+    background-color:rgb(144, 0, 206);
+}
+.contact .title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.form-container{
+    margin: 0px auto;
+    width: 50%;
+    max-width: 400px;
+}
+.form div{
+    margin-bottom: 20px;
+}
+.form label{
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    letter-spacing: 1px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+} 
+.form input,
+.form textarea{
+    width: 400px;
+    font-size: small;
+    border: none;
+    padding: 15px;
+    resize: none;
+    text-align: start;
+    border-radius: 8px;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    background-color: white;
+    transform: scale(1.05);
+}
+.form input:required:invalid{
+    border: 1px solid rgb(255, 0, 0);
+}
+.form-container .join-btn button{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    transition: 500ms;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-container .join-btn button:hover{
+    background-color: rgb(21, 31, 21);
+    color: rgb(255, 255, 255);
+    transition: 500ms;
+}
+.form-container .join-btn{
+    text-align: center;
+}
+.form-container .a-message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.a-message .success{
+    color: rgb(0, 255, 0);
+}
+.a-message .failed{
+    color: rgb(255, 0, 0);
+}
+/* foter styling */
+.foter{
+    width: 100%;
+}
+.foter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.foter-container .foter-icons a{
+    padding: 5px;
+}
+.foter-container .foter-icons img{
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+
+/* Responsive styling */
+
+@media(max-width: 1076px){
+    .event .container-1,
+    .event .container-2,
+    .event .container-3,
+    .event .container-4{
+        grid-template-columns: 100%;
+    }
+    .event .event-1 p,
+    .event .event-2 p,
+    .event .event-3 p,
+    .event .event-4 p{
+        line-height: 30px;
+    }
+
+    .container-1 img,
+    .container-2 img,
+    .container-3 img,
+    .container-4 img{
+        max-width: 100%;
+        height: 450px;
+        border-radius: 20px;
+        padding: 10px;
+        order: -1;
+    }
+    .card-1,
+    .card-2,
+    .card-3{
+        padding: 75px;
+    }
+}
+
+@media(max-width: 902px){
+     .hero .content h1{
+        font-size: 30px;
+        font-weight: 700;
+     }
+    .about-container{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+}
+
+@media(max-width: 826px){
+    .header .navbar .toggle{
+        display: block;
+    }
+    .navbar .nav{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgb(166, 2, 235), rgb(53, 13, 212));
+        top: 20px;
+        left: -100%;
+        text-align: center;
+        transition: all .9s ease-in;
+        z-index: 999;
+    }
+    .navbar .nav{
+        display: block;
+        margin: 50px 0;
+        line-height: 70px;
+    }
+    .navbar .nav a{
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+    .navbar ul a:hover{
+       color: rgb(255, 255, 255);
+    }
+    .navbar ul.show{
+        left: 0;
+    }
+    .main .main-content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .main .main-content .card{
+        align-content: center;
+        width: 100%;
+    }
+    .abt-section{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .about-container{
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .card-1,
+    .card-2,
+    .card-3{
+        padding: 100px;
+    }
+    .form-container{
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .hero .content h1{
+        font-size: 20px;
+        font-weight: 700;
+     }
+    .container-1 img,
+    .container-2 img,
+    .container-3 img,
+    .container-4 img{
+        display: none;
+    }
+}
+
+@media(max-width: 414px){
+    .c-1,
+    .c-2{
+        padding: 20px;
+    }
+    .form-container{
+        margin: 0px auto;
+        max-width: 250px;
+    }
+    .form input,
+    .form textarea{
+        width: 250px;
+        padding: 12px;
+    }
+}
