@@ -240,9 +240,9 @@ q {
 .container-2 img,
 .container-3 img,
 .container-4 img{
-   width: 800px;
+   width: 500px;
    height: 450px;
-   border-radius: 20px;
+   border-radius: 30px;
 }
 .event-1 h5,
 .event-2 h5,
