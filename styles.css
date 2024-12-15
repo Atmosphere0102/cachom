@@ -476,9 +476,11 @@ q {
     .container-4 img{
         max-width: 100%;
         height: 450px;
+        width:500px;
         border-radius: 20px;
         padding: 10px;
         order: -1;
+        align-items:center;
     }
     .card-1,
     .card-2,
@@ -497,6 +499,18 @@ q {
         display: grid;
         grid-template-columns: 100%;
         gap: 15px;
+    }
+    .container-1 img,
+    .container-2 img,
+    .container-3 img,
+    .container-4 img{
+        max-width: 100%;
+        height: 450px;
+        width:500px;
+        border-radius: 20px;
+        padding: 10px;
+        order: -1;
+        align-items:center;
     }
 }
 
@@ -522,7 +536,7 @@ q {
     }
     .navbar .nav a{
         font-size: 18px;
-        color: rgb(0, 0, 0);
+        color: #fff;
     }
     .navbar ul a:hover{
        color: rgb(255, 255, 255);
@@ -569,7 +583,13 @@ q {
     .container-2 img,
     .container-3 img,
     .container-4 img{
-        display: none;
+        max-width: 100%;
+        height: 250px;
+        width:250px;
+        border-radius: 20px;
+        padding: 10px;
+        order: -1;
+        align-items:center;
     }
 }
 
