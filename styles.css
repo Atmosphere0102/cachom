@@ -583,9 +583,8 @@ q {
     .container-2 img,
     .container-3 img,
     .container-4 img{
-        max-width: 100%;
-        height: 250px;
-        width:500px;
+        height: 20%;
+        width:100%;
         border-radius: 20px;
         padding: 10px;
         order: -1;
